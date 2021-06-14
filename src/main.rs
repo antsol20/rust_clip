@@ -76,7 +76,6 @@ fn main() {
 
 
     println!("Time taken is {}ms", sw.elapsed_ms());
-
     let good_accounts = good.lock().unwrap().clone();
     let bad_accounts = bad.lock().unwrap().clone();
     let good_found = good_accounts.len();
